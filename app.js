@@ -15,53 +15,71 @@ function showFunction() {
         - no
     `);
 
-    while (respuesta === "si" && cant <= 2) {
+    while (respuesta === "si" && cant <3) {
         let producto = prompt(`
             Que tipo de producto te gustaria elegir?
             
             A- ${vacuno}
             B- ${porcino}
             C- ${achura}
-            `)
-            
-            if(cant <=2){
-                switch(producto){
-                    case 'A':
-                        alert(`Elegiste ${vacuno}`);
-                        break
-                    case 'B':
-                        alert(`Elegiste ${porcino}`);
-                        break
-                    case 'C':
-                        alert(`Elegiste ${achura}`);
-                        break
-                    default :
-                        alert('no elegiste nada :(')
-                }
+        `)
+        if (producto) {
+            switch(producto){
+                case 'A':
+                    alert(`Elegiste ${vacuno}`);
+                    break
+                case 'B':
+                    alert(`Elegiste ${porcino}`);
+                    break
+                case 'C':
+                    alert(`Elegiste ${achura}`);
+                    break
+                default:
+                    alert(`Opcion incorrecta`)
+                    break
             }
-                cant++
-                if(cant === 3){
-                    alert(`
-                    -Ya hiciste la cantidad maxima de elecciones 
-                    -Fueron un total de ${cant} productos
-                    `)
-                }
-            
-                respuesta = prompt(`
-                Desea seguir elegiendo
-                
-                - si
-                - no
-                `)
-
-                alert(`-Fueron un total de ${cant} productos`)
-                
-            }
-            
-            if(respuesta === 'no'){
-                alert('Gracias por la visita!')
-            }
+            cant++
+        } 
         
+        else{
+            alert('no elegiste nada :(')
+        }
+
+        respuesta = prompt(`
+        Quieres seguir comprando?
+        
+        - si
+        - no
+        `)
+
+        if (respuesta === 'no'){
+            alert(`-Fueron un total de ${cant} productos`)
+        }
+        
+        if(cant === 3){
+            alert(`
+            -Ya hiciste la cantidad maxima de elecciones 
+            -Fueron un total de ${cant} productos
+            `),
+
+            alert('Gracias por la visita!') 
+        }
+        
+    }
+   
+    while(respuesta !== 'si'){
+        if(respuesta === 'no'){
+            alert('Gracias por la visita')
+        }
+        else {
+            alert(`
+                -Opcion incorrecta!
+                -Alcanzaste a elegir ${cant} productos
+            `)
+        }
+        break
+    }
+           
 }
 
 showFunction();
