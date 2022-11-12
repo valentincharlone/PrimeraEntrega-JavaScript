@@ -44,7 +44,7 @@ function showFunction() {
         `)
 
         if(cant === 3){
-            alert('ya hiciste la cantidad maxima de elecciones')
+            alert('ya hiciste la cantidad maxima de elecciones ')
         }
         
     }
