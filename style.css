@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+}
+
+.container {
+    max-width: 1400px;
+    margin:  auto;
+}
+header {
+    background-color: rgb(240, 240, 240);  
+}
+.container {
+    max-width: 1400px;
+    margin:  auto;
+}
+
+.color-acento {
+    color :rgb(24, 170, 170)
+}
+
+header {
+    background-color: rgb(240, 240, 240);  
+}
+
+header .logo {
+    text-align: center;
+    
+    margin: 0;
+    border-bottom: 2px solid black;
+    padding: 25px;
+    font-weight: bold;
+    color: black;
+    font-size: 2.7em;
+}
+
+.container-nav{
+    display: flex; 
+    justify-content: space-around;
+}
+.container-nav nav{
+    text-align: center;
+    line-height: 80px;
+    
+}
+.container-nav nav a{
+    text-decoration: none;
+    margin: 50px;
+    color: black;
+    font-weight: bolder;
+}
+.container-nav a:hover {
+    color: rgb(207, 7, 40);
+    transition: 0.3s;
+}
+.fondo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 75vh;
+    background-image: linear-gradient(rgba(34, 31, 31, 0.5), rgba(0, 0, 0, 0.5)), url("img/fondo1.webp") ;
+    background-repeat:  no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.fondo h1{
+    font-weight: bolder;
+    color: white;
+    font-size: 3.0rem;
+}
+.fondo button {
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: 2px 2px 5px;
+    color: black;
+    background-color: rgb(165, 153, 153);
+    transition: 300ms;
+    cursor: pointer;
+}
+.fondo button:hover {
+    background-color: rgb(190, 106, 113);
+    transition: 0.3s;
+}
+.container-section{
+    display: block;
+}
+.container-section .productos{
+    text-align: center;
+    margin: 50px;
+    font-size: 1.7rem;
+}
+
+.img-p{
+    margin: 20px;
+    display: flex;
+    width: auto;
+}.img-p p{
+    margin: 100px;
+    width: 30%;
+    font-size: 1.5rem;
+    margin-left: 200px;
+    line-height:150%;
+    margin-top: 150px;
+    text-align: justify;
+    animation-duration: 3s;
+    animation: backwards;
+}
+.img-p img{
+    margin: auto;
+    margin-left: 140px;
+    border-radius: 20px;
+    height:550px;
+    border:2px solid #fff;
+    
+    -moz-box-shadow: 10px 10px 5px #ccc;
+    -webkit-box-shadow: 10px 10px 5px #ccc;
+    box-shadow: 10px 10px 5px #ccc;
+    -moz-border-radius:25px;
+    -webkit-border-radius:25px;
+    border-radius:25px;
+}
+.img-p h2{
+    padding-left: 100px;
+
+}
+.footer-div{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(240, 240, 240);  
+}
