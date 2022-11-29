@@ -47,10 +47,11 @@ header .logo {
 .container-nav nav{
     text-align: center;
     line-height: 80px;
-    
+    font-size: 1.2rem;
 }
 .container-nav nav a{
     text-decoration: none;
+    
     margin: 50px;
     color: black;
     font-weight: bolder;
@@ -86,6 +87,9 @@ header .logo {
     background-color: rgb(165, 153, 153);
     transition: 300ms;
     cursor: pointer;
+}
+.fondo button a{
+    text-decoration: none;
 }
 .fondo button:hover {
     background-color: rgb(190, 106, 113);
@@ -137,4 +141,21 @@ header .logo {
     display: flex;
     justify-content: space-around;
     background-color: rgb(240, 240, 240);  
+}
+
+/* ABOUT */
+
+.about{
+    margin: auto;
+    display: inline-block;
+}
+.about h1{
+    text-align: center;
+    
+}
+.form{
+    justify-content: center;
+}
+.form form{
+    justify-content: center;
 }
