@@ -87,6 +87,7 @@ const addToCart = (id) => {
         console.log(producto)
         localStorage.setItem('carrito', JSON.stringify(carrito))
     }
+    calculateTotal()
 }
 
 //MOSTRAR CARRITO
