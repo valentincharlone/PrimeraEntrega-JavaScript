@@ -16,9 +16,14 @@ body {
 header {
     background-color: rgb(240, 240, 240);  
 }
-.container {
-    max-width: 1400px;
-    margin:  auto;
+
+.container span img{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: 20px;
+    margin-left: 30px;
+    
 }
 
 .color-acento {
@@ -26,7 +31,9 @@ header {
 }
 
 header {
-    background-color: rgb(240, 240, 240);  
+    background-color: rgb(221, 215, 215);  
+    position: sticky;
+    top: 0;
 }
 
 header .logo {
@@ -41,10 +48,13 @@ header .logo {
 }
 
 .container-nav{
+    
     display: flex; 
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
 }
 .container-nav nav{
+    
     text-align: center;
     line-height: 80px;
     font-size: 1.2rem;
@@ -60,13 +70,41 @@ header .logo {
     color: rgb(207, 7, 40);
     transition: 0.3s;
 }
+/* CARRITO */
+
+.carrito{
+    max-height: 10px;
+}
+.icon-carrito {
+    color: red;
+    cursor: pointer;
+    font-size: 1.5rem;
+    position: relative;
+    left: 90%;
+    top: -80px;
+    padding-top: -10px;
+    border-style: none;
+    background-color: rgb(221, 215, 215);  
+    
+}
+.carrito-epico{
+    max-width: 1300px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    min-height: 670px;
+    line-height: 80px;
+}
+
+
+
 .fondo {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     height: 75vh;
-    background-image: linear-gradient(rgba(34, 31, 31, 0.5), rgba(0, 0, 0, 0.5)), url("img/fondo.webp") ;
+    background-image: linear-gradient(rgba(34, 31, 31, 0.5), rgba(0, 0, 0, 0.5)), url("/img/fondo1.webp") ;
     background-repeat:  no-repeat;
     background-size: cover;
     background-position: center center;
@@ -138,10 +176,20 @@ header .logo {
     padding-left: 100px;
 
 }
+
+/* FOOOTER */
+
 .footer-div{
+    
     display: flex;
     justify-content: space-around;
     background-color: rgb(240, 240, 240);  
+}
+.footer-modal{
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
 }
 
 /* ABOUT */
@@ -160,3 +208,14 @@ header .logo {
 .form form{
     justify-content: center;
 }
+
+/* CARRITO */
+.table tbody td {
+    display: flex;
+    justify-content: space-between;
+}
+.img-carrito{
+    width:200px;
+    padding:20px;
+}
+

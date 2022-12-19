@@ -2,14 +2,17 @@
 .prod-title{
     margin-top: 50px;
 }
-.prod-title h1{
+.prod-title h2{
     text-transform: uppercase;
     text-align: center;
 }
 .productos{
-    margin: 0 100px 0 100px;
-    display: flex;
-    justify-content: space-between;
+    max-width: 1300px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 100px;
+    margin-bottom: 100px;
 }
 .shop-card{
     margin-top: 50px;
@@ -25,7 +28,8 @@
 .shop-card img {
     margin-top: 10px ;
     margin-bottom: 10px;
-    width: 100%;
+    height: 250px;
+    width: 250px;
     border-radius: 10px;
     box-shadow: 0 10px 20px rgba(0,0,0,.3);
 }
@@ -60,10 +64,7 @@
     margin-top: 4px;
 }
 .shop-card .btn{
-    position: relative;
-    z-index: 1;
     float: right;
-    display: inline-block;
     font-size: 13px;
     font-weight: 900;
     text-transform: uppercase;
@@ -84,3 +85,4 @@
     background-color: #FF3100;
     color: rgb(255, 255, 255);
 }
+
