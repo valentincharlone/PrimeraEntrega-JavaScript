@@ -114,7 +114,7 @@ const showCarrito = () => {
                         <td>${price}</td>
                         <td>${cantidad}</td>
                         <td>
-                            <button class="btn btn-danger  m-2" id ="eliminar${id}" >Eliminar producto</button>
+                            <button class="btn btn-danger m-2 btnEliminar" id ="eliminar${id}" >Eliminar producto</button>
                         </td>
                         
                     `;
@@ -125,6 +125,7 @@ const showCarrito = () => {
             deleteFromCart(id);
         })
     })
+    calculateTotal()
 }
    
 

@@ -192,6 +192,7 @@ header .logo {
 
 }
 
+
 /* ABOUT */
 
 .about{
@@ -217,5 +218,14 @@ header .logo {
 .img-carrito{
     width:200px;
     padding:20px;
+}
+
+.table .btnEliminar{
+    background-color: rgb(141, 3, 3);
+    transition: all .3s ease-in-out;
+}
+.table .btnEliminar:hover{
+    background-color: #FF3100;
+    color: rgb(255, 255, 255);
 }
 
