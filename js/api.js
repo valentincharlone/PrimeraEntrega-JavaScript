@@ -6,13 +6,26 @@ const listaDolar = document.getElementById('lista-dolar')
 const apiDolar = async () => {
     const response = await fetch(urlDolar);
     const data = await response.json();
-    
-    const {oficial, solidario, blue} = data
+    console.log(data)
+    const {oficial, solidario, blue,  mep}  = data
 
     listaDolar.innerHTML = `
-        <p> Dolar Oficial: ${oficial} </p>
-        <p> Dolar Blue: ${blue} </p>
-        <p> Dolar Solidario: ${solidario} </p>
+        <div class="tipos-dolar">
+            <p> Dolar Oficial  </p>
+            <span> $ ${oficial}</span>
+        </div>
+        <div class="tipos-dolar">
+            <p> Dolar Blue  </p>
+            <span> $ ${blue}</span>
+        </div>
+        <div class="tipos-dolar">
+            <p> Dolar Solidario  </p>
+            <span> $ ${solidario}</span>
+        </div>
+        <div class="tipos-dolar">
+            <p> Dolar Mep  </p>
+            <span> $ ${mep}</span>
+        </div>
     `
     
 }

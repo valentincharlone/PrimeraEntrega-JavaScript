@@ -9,15 +9,11 @@ class Productos {
 }
 
 const vacio = new Productos(1, "Vacio", 1500, "img/vacio.jpg");
-const tapaDeAsado = new Productos(
-    2,
-    "Tapa de asado",
-    1450,
-    "img/tapaDeAsado.jpg"
-);
+const tapaDeAsado = new Productos(2,"Tapa de asado",1450,"img/tapaDeAsado.jpg");
 const tomaHawk = new Productos(3, "Toma Hawk", 1650, "img/tomahawk.jpg");
 const picaña = new Productos(4, "Picaña", 1800, "img/picaña.jpg");
 const tiraDeAsado = new Productos(5, "Tira de Asado", 2000, "img/asado.webp");
+const entraña = new Productos(6, "Entraña", 1700, "img/entrana.webp")
 
 const arrayProductos = [];
 
@@ -26,6 +22,7 @@ arrayProductos.push(tapaDeAsado);
 arrayProductos.push(tomaHawk);
 arrayProductos.push(picaña);
 arrayProductos.push(tiraDeAsado);
+arrayProductos.push(entraña)
 
 let carrito = [];
 
@@ -38,7 +35,6 @@ document.addEventListener("DOMContentLoaded", () => {
     if (verCarrito) {
         showCarrito();
     }
-    
 });
 
 if (contenedorProductos) {
@@ -72,7 +68,7 @@ if (contenedorProductos) {
             // <button id="disminuir">-<button>
             // <span>${cantidad}</span>
             // <button id="aumentar">+</button>
-                                
+
             //agregar al productos al carrito
             contenedorProductos.appendChild(card);
 
@@ -80,12 +76,10 @@ if (contenedorProductos) {
             btn.addEventListener("click", () => {
                 addToCart(id);
             });
-
         });
     };
     showProductos();
 }
-
 
 //FUNCION AGREGAR AL CARRITO
 
@@ -98,8 +92,7 @@ const addToCart = (id) => {
             gravity: "bottom",
             duration: 2000,
         }).showToast();
-    } 
-    else {
+    } else {
         const producto = arrayProductos.find((prod) => prod.id === id);
         carrito.push(producto);
         Toastify({
@@ -119,8 +112,7 @@ if (verCarrito) {
     verCarrito.addEventListener("click", () => {
         showCarrito();
     });
-} 
-
+}
 
 const showCarrito = () => {
     carritoContenedor.innerHTML = "";
@@ -141,14 +133,13 @@ const showCarrito = () => {
                         
                     `;
         carritoContenedor.appendChild(tr);
-        
+
         const boton = document.getElementById(`eliminar${id}`);
         boton.addEventListener("click", () => {
             deleteFromCart(id);
-            
         });
     });
-    
+
     calculateTotal();
 };
 
@@ -162,19 +153,18 @@ const deleteFromCart = (id) => {
         text: "Producto eliminado",
         className: "info",
         gravity: "bottom",
-        position: 'left',
+        position: "left",
         duration: 2000,
         style: {
-          background: "linear-gradient(to right, #FF3100, #ee5151)",
-        }
+            background: "linear-gradient(to right, #FF3100, #ee5151)",
+        },
     }).showToast();
 
     localStorage.setItem("carrito", JSON.stringify(carrito));
-    
 };
 
 const vaciarCarrito = document.getElementById("vaciarCarrito");
-if(vaciarCarrito){
+if (vaciarCarrito) {
     vaciarCarrito.addEventListener("click", () => {
         emptyCart();
     });
@@ -187,7 +177,7 @@ const emptyCart = () => {
         title: "¡El carrito esta vacio!",
         icon: "warning",
         confirmButtonText: "Aceptar",
-    })
+    });
 
     localStorage.clear();
 };
@@ -201,6 +191,3 @@ const calculateTotal = () => {
     });
     total.innerHTML = `: $${totalCompra}`;
 };
-
-
-
