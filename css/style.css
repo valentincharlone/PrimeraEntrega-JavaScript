@@ -13,6 +13,11 @@ body {
     max-width: 1400px;
     margin:  auto;
 }
+.container-carrito{
+    max-width: 1400px;
+    margin:  auto;
+    min-height: 770px;
+}
 header {
     background-color: rgb(240, 240, 240);  
 }
@@ -24,6 +29,23 @@ header {
     top: 20px;
     margin-left: 30px;
     
+}
+.container .dolar {
+    display: block;
+    position: absolute;
+    left: 73%;
+    bottom: 35%;
+    font-size: 0.8rem;
+    font-weight: bolder;
+}
+.container .dolar-prod{
+    display: block;
+    position: absolute;
+    line-height: 15px;
+    left: 71%;
+    bottom: 32%;
+    font-size: 0.8rem;
+    font-weight: bolder;
 }
 
 .color-acento {
@@ -97,7 +119,6 @@ header .logo {
 }
 
 
-
 .fondo {
     display: flex;
     align-items: center;
@@ -139,28 +160,31 @@ header .logo {
 }
 .container-section .productos{
     text-align: center;
-    margin: 50px;
+    margin: 80px;
     font-size: 1.7rem;
 }
 
 .img-p{
-    margin: 20px;
+    margin: auto;
     display: flex;
-    width: auto;
+    max-width: 1330px;
+    gap: 300px;
+    justify-content: space-evenly;
 }.img-p p{
-    margin: 100px;
-    width: 30%;
-    font-size: 1.5rem;
-    margin-left: 200px;
-    line-height:150%;
+    width: 40%;
+    font-size: 1.2rem;
+    line-height: 50px;
     margin-top: 150px;
     text-align: justify;
     animation-duration: 3s;
     animation: backwards;
 }
+.img-p h2{
+    margin-bottom: 60px;
+}
 .img-p img{
     margin: auto;
-    margin-left: 140px;
+    
     border-radius: 20px;
     height:550px;
     border:2px solid #fff;
@@ -172,10 +196,7 @@ header .logo {
     -webkit-border-radius:25px;
     border-radius:25px;
 }
-.img-p h2{
-    padding-left: 100px;
 
-}
 
 /* FOOOTER */
 
@@ -191,33 +212,96 @@ header .logo {
     margin-bottom: 20px;
 
 }
+.footer-div-carrito{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(240, 240, 240);  
+    
+}
+.footer-div-about{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(240, 240, 240);  
+}
 
 
 /* ABOUT */
 
 .about{
+    max-width: 1300px;
     margin: auto;
-    display: inline-block;
 }
 .about h1{
+    padding-top: 60px;
+    font-size: 2rem;
     text-align: center;
+}
+.about .form{
+    min-height: 860px;
+    background-image: url('/img/fondo1.webp');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
     
+    border-radius: 50px;
 }
-.form{
-    justify-content: center;
+.about .form .formulario{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+.about .form .formulario input{
+    width: 500px;
+    height: 50px;
+    margin-top: 100px;
+    border-radius: 15px;
+    padding-left: 20px;
 }
-.form form{
-    justify-content: center;
+.about .form .formulario button{
+    width: 250px;
+    height: 50px;
+    margin-top: 100px;
+    border-radius: 15px;
+    transition: .3s ease-in-out;
+    background-color: aliceblue;
+    font-weight: bolder;
+    cursor: pointer;
+} 
+.about .form .formulario button:hover{
+    background-color: #FF3100;
+    color: rgb(0, 0, 0);
 }
 
 /* CARRITO */
-.table tbody td {
-    display: flex;
-    justify-content: space-between;
+
+.carrito-titulos{
+    position: relative;
+    left: 10%;
+   
 }
+.table tbody td {
+    font-size: 1.3rem;
+    line-height: 180px;
+   
+}
+
+
 .img-carrito{
-    width:200px;
+    width:230px;
     padding:20px;
+    border-radius: 30px;
+    margin-right: -120px;
+}
+.btnEliminar{
+    position: absolute;
+    margin-top: 60px;
+    left: 80%;
+}
+.botones-carrito {
+    margin-top: 40px;
+    margin-left: 200px;
 }
 
 .table .btnEliminar{
@@ -228,4 +312,7 @@ header .logo {
     background-color: #FF3100;
     color: rgb(255, 255, 255);
 }
+/* ABOUT */
+
+
 

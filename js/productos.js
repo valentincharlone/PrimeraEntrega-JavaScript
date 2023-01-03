@@ -178,7 +178,7 @@ const compraCarrito = () => {
             const { id, corte, price, img, cantidad } = prod;
             if (listaCompra) {
               const tr = document.createElement("tr");
-              row.innerHTML += `
+              tr.innerHTML += `
                         <td>
                         <img class="img-fluid img-carrito" src="${img}"/>
                         </td>

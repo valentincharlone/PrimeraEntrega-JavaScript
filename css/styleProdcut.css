@@ -3,6 +3,7 @@
     margin-top: 50px;
 }
 .prod-title h2{
+    margin-bottom: 50px;
     text-transform: uppercase;
     text-align: center;
 }
@@ -21,55 +22,87 @@
     box-shadow: 0 10px 20px rgba(0,0,0,.3);
     overflow: hidden;
     border-radius: 10px;
-    padding: 25px;
+    height: 500px;
     text-align: center;
 }
 
+
 .shop-card img {
-    margin-top: 10px ;
-    margin-bottom: 10px;
-    height: 250px;
-    width: 250px;
+    margin-top: 0 ;
+    margin-bottom: 20px;
+    height: 330px;
+    width: 350px;
     border-radius: 10px;
-    box-shadow: 0 10px 20px rgba(0,0,0,.3);
+    /* box-shadow: 0 10px 20px rgba(0,0,0,.3); */
 }
-.shop-card .title{
-    font-weight: 900;
-    text-transform: uppercase;
-    font-size: 30px;
+
+
+.shop-card .cta{
+    display: flex;
+    padding: 0px 0px 5px 5px;
+    justify-content: space-between;
+    margin-bottom: 0px;
+}
+
+.shop-card .cta .title{
+    font-weight: lighter;
+    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.3rem;
     color: #23211f;
     margin-bottom: 5px;
-}
-.shop-card .desc{
-    font-size: 17px;
-    opacity: .8;
-    margin-top: 10px;
-}
-.shop-card .cta{
-    padding: 20px 20px 5px;
-
+    text-align: left;
+    padding-left: 24px;
+    line-height: 35px;
 }
 .shop-card .cta::after {
   content: '';
   display: table;
   clear: both;
 }
+
 .shop-card .price{
     float: left;
     color: #FF3100;
     font-size: 22px;
-    font-weight: 900;
-    padding-top: 2px;
+    font-weight: 700;
     transition: color .3s ease-in-out;
-    margin-top: 4px;
+}
+
+
+.shop-card .card-buttons{
+    display: flex;
+    justify-content: space-between;
+}
+.shop-card .menos-mas{
+    display: block;
+    margin-left: 20px;
+}
+.shop-card .menos-mas p{
+    line-height: 90px;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.shop-card .card-buttons button{
+    border-radius: 20px;
+    padding: 15px;
+    margin-right: 35px;
+    transition: all .3s ease-in-out;
+}
+.shop-card .card-buttons button:hover{
+    background-color: #FF3100;
+    color: rgb(255, 255, 255);
 }
 .shop-card .btn{
     float: right;
     font-size: 13px;
-    font-weight: 900;
+    font-weight: 700;
     text-transform: uppercase;
     color: #FF3100;
-    padding: 12px 18px;
+    margin-top: 25px;
+    margin-right: 10px;
+    padding: 20px;
     cursor: pointer;
     transition: all .3s ease-in-out;
     line-height: .95;
