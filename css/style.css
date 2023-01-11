@@ -232,12 +232,12 @@ header .logo {
 }
 .footer-div-carrito  h3{
     margin-top: 15px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: bolder;
 }
 .footer-div-carrito h4{
     margin-top: 15px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: bolder;
 }
 .footer-div-about{
@@ -394,7 +394,7 @@ header .logo {
 .container-carrito{
     max-width: 1400px;
     margin:  auto;
-    min-height: 800px;
+    min-height: 750px;
 }
 .container-carrito .carrito-compra{
     margin-top: 50px;
