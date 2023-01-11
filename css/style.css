@@ -3,10 +3,12 @@
 }
 html {
     scroll-behavior: smooth;
+    height: 100%;
 }
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 0;
+    
 }
 
 .container {
@@ -223,21 +225,24 @@ header .logo {
     background-color: rgb(240, 240, 240);  
 }
 
+
 .footer-div-carrito{
     display: flex;
     justify-content: space-around;
     background-color: rgb(240, 240, 240); 
     min-height: 50px; 
-    
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 .footer-div-carrito  h3{
     margin-top: 15px;
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: bolder;
 }
 .footer-div-carrito h4{
     margin-top: 15px;
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: bolder;
 }
 .footer-div-about{
@@ -248,12 +253,12 @@ header .logo {
 }
 .footer-div-about  h3{
     margin-top: 15px;
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: bolder;
 }
 .footer-div-about h4{
     margin-top: 15px;
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: bolder;
 }
 
@@ -362,7 +367,7 @@ header .logo {
 .btnEliminar{
     position: absolute;
     margin-top: 80px;
-    left: 76%;
+    left: 75%;
 }
 .botones-carrito {
     margin-top: 40px;
@@ -401,15 +406,12 @@ header .logo {
     min-height: 670px;
     line-height: 80px;
 }
-.container-carrito{
+ .container-carrito{
     max-width: 1400px;
     margin:  auto;
-    min-height: 750px;
+    
 }
-.container-carrito .carrito-compra{
-    margin-top: 50px;
-    margin-bottom: 80px;
-}
+
 .total-price{
     margin: auto;
 }

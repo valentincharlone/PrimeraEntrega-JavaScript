@@ -144,6 +144,8 @@ const showCarrito = () => {
         boton.addEventListener("click", () => {
             deleteFromCart(id);
         });
+        
+        
     });
 
     calculateTotal();
@@ -212,8 +214,10 @@ const showBuy = () => {
                 totalCompra += producto.price * producto.cantidad;
             });
             precioCompra.innerHTML = `Total :  $${totalCompra}`;
+            
         }
-    }  
+    } 
+     
 }
 
 
@@ -240,6 +244,8 @@ const finishBuy = () => {
             confirmButtonText: "Aceptar",
         }); 
         localStorage.clear();
+        carritoContenedor.remove()
+        total.remove()
     }
 }
 
