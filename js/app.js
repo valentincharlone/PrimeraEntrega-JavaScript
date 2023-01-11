@@ -120,6 +120,7 @@ if (verCarrito) {
 }
 
 const showCarrito = () => {
+    
     carritoContenedor.innerHTML = "";
     carrito.forEach((producto) => {
         const { id, corte, price, img, cantidad } = producto;
