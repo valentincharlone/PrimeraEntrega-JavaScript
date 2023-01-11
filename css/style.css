@@ -187,7 +187,7 @@ header .logo {
     display: flex;
     justify-content: space-evenly;
     margin-top: 90px;
-    font-size: 1.4rem;
+    font-size: 1.1rem;
 }
 .tipos-dolar{
     border: 1px solid black;
@@ -207,7 +207,7 @@ header .logo {
     font-style: oblique;
 }
 .tipos-dolar:hover{
-    border: 2px solid white;
+    border: 1px solid white;
     background-color: rgb(103, 112, 109);
     color: white;
 }
