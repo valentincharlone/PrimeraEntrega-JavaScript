@@ -246,6 +246,8 @@ const finishBuy = () => {
         localStorage.clear();
         carritoContenedor.remove()
         total.remove()
+        listaCompra.remove()
+        precioCompra.remove()
     }
 }
 
