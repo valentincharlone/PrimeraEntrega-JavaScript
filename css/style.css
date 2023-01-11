@@ -219,12 +219,29 @@ header .logo {
 /* FOOOTER */
 
 .footer-div{
-    max-height: 60px;
+    max-height: 50px;
     display: flex;
     justify-content: space-around;
     background-color: rgb(240, 240, 240);  
+    font-size: 0.9rem;
 }
 
+.footer-div-producto {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(240, 240, 240); 
+    max-height: 60px; 
+}
+.footer-div-producto h3 {
+    margin-top: 15px;
+    font-size: 1rem;
+    font-weight: bolder;
+}
+.footer-div-producto h4 {
+    margin-top: 15px;
+    font-size: 1rem;
+    font-weight: bolder;
+}
 
 .footer-div-carrito{
     display: flex;
@@ -238,30 +255,27 @@ header .logo {
 }
 .footer-div-carrito  h3{
     margin-top: 15px;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: bolder;
 }
 .footer-div-carrito h4{
     margin-top: 15px;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: bolder;
 }
+
 .footer-div-about{
     margin-top: 80px;
     display: flex;
     justify-content: space-around;
     background-color: rgb(240, 240, 240);  
 }
-.footer-div-about  h3{
+.footer-div-about  h3, h4{
     margin-top: 15px;
     font-size: 1.1rem;
     font-weight: bolder;
 }
-.footer-div-about h4{
-    margin-top: 15px;
-    font-size: 1.1rem;
-    font-weight: bolder;
-}
+
 
 
 /* ABOUT */
