@@ -189,6 +189,7 @@ const showBuy = () => {
         listaCompra.innerHTML = `
         <p class="text-center text-primary parrafo">¡Aun no agregaste nada!</p>
         `;
+        precioCompra.remove()
     } 
     else {
     listaCompra.innerHTML = "";

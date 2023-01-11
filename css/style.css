@@ -251,7 +251,7 @@ header .logo {
     text-align: center;
 }
 .about .form{
-    min-height: 860px;
+    min-height: 800px;
     background-image:linear-gradient(rgba(26, 24, 24, 0.5), rgba(65, 59, 59, 0.5)), url('/img/fondo1.webp') ;
     background-size: cover;
     background-position: bottom;
@@ -275,7 +275,7 @@ header .logo {
 }
 .about .form .formulario input{
     width: 400px;
-    height: 35px;
+    height: 40px;
     outline: none;
     border-radius: 15px;
     padding-left: 20px;
@@ -288,8 +288,8 @@ header .logo {
     padding: 10px;
 }
 .about .form .formulario button{
-    width: 150px;
-    height: 50px;
+    width: 130px;
+    height: 40px;
     margin-top: 70px;
     border-radius: 15px;
     transition: .3s ease-in-out;
@@ -393,8 +393,8 @@ header .logo {
     margin: auto;
 }
 .total-price h4{
-    font-size: 1.4rem;
-    font-style: oblique;
+    font-size: 1.2rem;
+    
     text-transform: uppercase;
 }
 
