@@ -64,8 +64,8 @@
 .shop-card .price{
     float: left;
     color: #FF3100;
-    font-size: 22px;
-    font-weight: 700;
+    font-size: 18px;
+    font-weight: 500;
     transition: color .3s ease-in-out;
 }
 
@@ -109,8 +109,8 @@
     border: none;
     background: none;
     outline: none;
-    border: 2px solid #141313;
-    border-radius: 20px;
+    border: 1px solid #141313;
+    border-radius: 15px;
     overflow: hidden;
     
 }
