@@ -226,7 +226,8 @@ header .logo {
 .footer-div-carrito{
     display: flex;
     justify-content: space-around;
-    background-color: rgb(240, 240, 240);  
+    background-color: rgb(240, 240, 240); 
+    max-height: 60px; 
     
 }
 .footer-div-about{
@@ -323,6 +324,7 @@ header .logo {
 .table tbody .cant{
     color: #FF3100;
     padding-left: 70px;
+    font-weight: bold;
 }
 
 
