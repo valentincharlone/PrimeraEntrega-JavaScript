@@ -248,7 +248,7 @@ header .logo {
     display: flex;
     justify-content: space-around;
     background-color: rgb(240, 240, 240); 
-    min-height: 70px; 
+    min-height: 60px; 
     position: fixed;
     width: 100%;
     bottom: 0;
