@@ -28,6 +28,10 @@ let carrito = [];
 
 const contenedorProductos = document.getElementById("contenedor-productos");
 const carritoContenedor = document.getElementById("lista-carrito");
+const listaCompra = document.getElementById('lista-compra')
+const total = document.getElementById("total");
+const precioCompra = document.getElementById('totalCompra')
+
 
 document.addEventListener("DOMContentLoaded", () => {
     carrito = JSON.parse(localStorage.getItem("carrito")) || [];
@@ -36,6 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
         showCarrito();
     }
 });
+
 
 if (contenedorProductos) {
     const showProductos = () => {
@@ -100,8 +105,8 @@ const addToCart = (id) => {
             gravity: "bottom",
             duration: 2000,
         }).showToast();
-        localStorage.setItem("carrito", JSON.stringify(carrito));
     }
+    localStorage.setItem("carrito", JSON.stringify(carrito));
     calculateTotal();
 };
 
@@ -125,10 +130,10 @@ const showCarrito = () => {
                             <img class="img-fluid img-carrito" src="${img}"/>
                         </td>
                         <td>${corte}</td>
-                        <td>${price}</td>
-                        <td>${cantidad} kg</td>
+                        <td>${price} x kg</td>
+                        <td class="cant">${cantidad} kg</td>
                         <td>
-                            <button class="btn btn-danger btnEliminar" id ="eliminar${id}" >Eliminar producto</button>
+                            <button class="btn btn-danger btnEliminar" id ="eliminar${id}" >Eliminar</button>
                         </td>
                         
                     `;
@@ -170,6 +175,72 @@ if (vaciarCarrito) {
     });
 }
 
+//FINALIZAR COMPRA
+const verCompra = document.getElementById('verCompra')
+if(verCompra) {
+    verCompra.addEventListener('click', () => {
+        showBuy()
+    })
+}
+
+const showBuy = () => {
+    
+    if (carrito.length === 0) {
+        listaCompra.innerHTML = `
+        <p class="text-center text-primary parrafo">¡Aun no agregaste nada!</p>
+        `;
+    } 
+    else {
+    listaCompra.innerHTML = "";
+    carrito.forEach((producto) => {
+        const { id, corte, price, img, cantidad } = producto;
+        
+        listaCompra.innerHTML += 
+            `
+            <hr>
+                <li>${corte}</li>
+                <li>${price} x kg</li>
+                <li>${cantidad} kg</li>
+            
+            `
+        });
+        if(precioCompra){
+            let totalCompra = 0;
+            carrito.forEach((producto) => {
+                totalCompra += producto.price * producto.cantidad;
+            });
+            precioCompra.innerHTML = `Total :  $${totalCompra}`;
+        }
+    }  
+}
+
+
+
+const finalizarCompra = document.getElementById('finalizarCompra')
+if(finalizarCompra){
+    finalizarCompra.addEventListener('click', () => {
+        finishBuy()
+    })
+}
+const finishBuy = () => {
+    if(carrito.length === 0){
+        Swal.fire({
+            title: "No compraste nada!",
+            icon: "warning",
+            confirmButtonText: "Aceptar",
+            footer: '<a class="text-decoration-none fw-bolder fs-5" href="productos.html">Ver carnes</a>',
+            confirmButtonColor: '#FF7D61'
+        });
+    }else {
+        Swal.fire({
+            title: "Gracias por la compra!",
+            icon: "success",
+            confirmButtonText: "Aceptar",
+        }); 
+        localStorage.clear();
+    }
+}
+
 const emptyCart = () => {
     carrito.length = [];
     showCarrito();
@@ -182,7 +253,7 @@ const emptyCart = () => {
     localStorage.clear();
 };
 
-const total = document.getElementById("total");
+
 
 const calculateTotal = () => {
     let totalCompra = 0;
