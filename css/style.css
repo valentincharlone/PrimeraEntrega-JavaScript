@@ -60,7 +60,7 @@ header .logo {
     
     text-align: center;
     line-height: 70px;
-    font-size: 0.9rem;
+    font-size: 1.0rem;
 }
 .container-nav nav a{
     text-decoration: none;
@@ -245,6 +245,16 @@ header .logo {
     display: flex;
     justify-content: space-around;
     background-color: rgb(240, 240, 240);  
+}
+.footer-div-about  h3{
+    margin-top: 15px;
+    font-size: 1rem;
+    font-weight: bolder;
+}
+.footer-div-about h4{
+    margin-top: 15px;
+    font-size: 1rem;
+    font-weight: bolder;
 }
 
 
