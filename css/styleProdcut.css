@@ -17,12 +17,12 @@
 }
 .shop-card{
     margin-top: 50px;
-    width: 350px;
+    width: 300px;
     background: #f5f5f5;
     box-shadow: 0 10px 20px rgba(0,0,0,.3);
     overflow: hidden;
     border-radius: 10px;
-    height: 500px;
+    height: 450px;
     text-align: center;
 }
 
@@ -30,8 +30,8 @@
 .shop-card img {
     margin-top: 0 ;
     margin-bottom: 20px;
-    height: 330px;
-    width: 350px;
+    height: 300px;
+    width: 310px;
     border-radius: 10px;
     /* box-shadow: 0 10px 20px rgba(0,0,0,.3); */
 }
