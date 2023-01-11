@@ -230,10 +230,11 @@ header .logo {
     display: flex;
     justify-content: space-around;
     background-color: rgb(240, 240, 240); 
-    min-height: 50px; 
-    position: absolute;
-    bottom: 0;
+    max-height: 60px; 
+    position: fixed;
     width: 100%;
+    bottom: 0;
+    
 }
 .footer-div-carrito  h3{
     margin-top: 15px;
@@ -398,15 +399,8 @@ header .logo {
     background-color: rgb(221, 215, 215);  
     
 }
-.carrito-epico{
-    max-width: 1300px;
-    margin: auto;
-    padding: 20px;
-    text-align: center;
-    min-height: 670px;
-    line-height: 80px;
-}
- .container-carrito{
+
+.container-carrito{
     max-width: 1400px;
     margin:  auto;
     
