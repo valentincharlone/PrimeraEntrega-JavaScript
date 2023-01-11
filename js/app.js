@@ -244,6 +244,7 @@ const finishBuy = () => {
             confirmButtonText: "Aceptar",
         }); 
         localStorage.clear();
+    
         carritoContenedor.remove()
         total.remove()
         listaCompra.remove()
