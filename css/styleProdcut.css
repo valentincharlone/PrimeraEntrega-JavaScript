@@ -12,7 +12,7 @@
     margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px;
+    gap: 100px;
     margin-bottom: 100px;
 }
 .shop-card{
@@ -87,7 +87,7 @@
 .shop-card .card-buttons button{
     border-radius: 20px;
     padding: 15px;
-    margin-right: 35px;
+    margin-right: 20px;
     transition: all .3s ease-in-out;
 }
 .shop-card .card-buttons button:hover{
@@ -101,8 +101,6 @@
     text-transform: uppercase;
     color: #FF3100;
     margin-top: 25px;
-    margin-right: 10px;
-    padding: 20px;
     cursor: pointer;
     transition: all .3s ease-in-out;
     line-height: .95;
@@ -110,9 +108,7 @@
     background: none;
     outline: none;
     border: 1px solid #141313;
-    border-radius: 15px;
     overflow: hidden;
-    
 }
 .shop-card .btn:hover{
     background-color: #FF3100;

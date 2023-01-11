@@ -63,7 +63,7 @@ if (contenedorProductos) {
 
                     <div class="card-buttons">
                                 <div class="menos-mas">
-                                    <p>Cantidad (kg)</p>
+                                    <p>Cantidad (kg) </p>
                                 </div>
                                 <div>
                                     <button class="btn" id = "boton${id}" >Agregar al Carrito</button>
