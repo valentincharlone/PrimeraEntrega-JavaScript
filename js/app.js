@@ -101,7 +101,7 @@ const addToCart = (id) => {
         const producto = arrayProductos.find((prod) => prod.id === id);
         carrito.push(producto);
         Toastify({
-            text: "Se agreggo al carrito",
+            text: "Se agrego al carrito",
             gravity: "bottom",
             duration: 2000,
         }).showToast();
